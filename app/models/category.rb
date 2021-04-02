@@ -1,7 +1,7 @@
 class Category < ApplicationRecord
   has_and_belongs_to_many :products
   validates :name, presence: true, uniqueness: true
-  belongs_to :category
+ 
   def sub_categories
     Category.all.where(category_id: self.id).pluck :name
   end
