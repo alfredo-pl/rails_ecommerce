@@ -1,2 +1,2 @@
-sizes = ["XS","S","M","L","XL", "XXL"]
-sizes.each { |size| Color.create(name: size) }
+sizes = ["S","M","L"]
+sizes.each { |size| Size.create(name: size) }
